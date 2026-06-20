@@ -11,9 +11,9 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-[#A3E635] font-mono tracking-wider mb-5 text-sm md:text-base">
+        <p className="text-[#A3E635] font-mono tracking-wider mb-5 text-sm md:text-base">
           Hi, my name is
-        </h2>
+        </p>
       </motion.div>
 
       <motion.div
@@ -31,9 +31,9 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-space font-bold text-[#666] tracking-tighter mb-8 leading-tight">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-space font-bold text-[#666] tracking-tighter mb-8 leading-tight">
           Android, Linux & Web <br className="hidden md:block"/>Developer.
-        </h1>
+        </h2>
       </motion.div>
 
       <motion.div

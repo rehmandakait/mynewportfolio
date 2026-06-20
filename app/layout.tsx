@@ -7,15 +7,34 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Charan Aerpula (A Charan Teja Yadav) — Android, Linux & Web Developer',
+  metadataBase: new URL('https://charantejayadav.aerpula.app'),
+  title: {
+    default: 'Charan Aerpula (A Charan Teja Yadav) — Android, Linux & Web Developer',
+    template: '%s | Charan Aerpula'
+  },
   description: 'Charan Aerpula (A Charan Teja Yadav) from Hyderabad is an Android, Linux, and Web Developer building native apps, scalable backends, and data-driven web tools. Available for hire.',
   keywords: ["charan aerpula", "aerpula", "a charan teja yadav", "charan teja yadav", "charan hyderabad", "Android developer", "Linux developer", "web developer", "Go developer", "Kotlin", "Python", "Node.js", "WebRTC", "freelance developer India"],
+  authors: [{ name: 'Charan Aerpula', url: 'https://charantejayadav.aerpula.app' }],
+  creator: 'Charan Aerpula',
+  publisher: 'Charan Aerpula',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
-    canonical: 'https://charantejayadav.aerpula.app'
+    canonical: 'https://charantejayadav.aerpula.app',
   },
   robots: {
     index: true,
-    follow: true
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: 'https://cdn-icons-png.flaticon.com/128/270/270780.png',
@@ -28,19 +47,20 @@ export const metadata: Metadata = {
     title: "Charan Aerpula (A Charan Teja Yadav) — Android, Linux & Web Developer",
     description: "Charan Aerpula (A Charan Teja Yadav) from Hyderabad is an Android, Linux, and Web Developer building native apps, scalable backends, and data-driven web tools. Available for hire.",
     images: [{
-      url: "https://charantejayadav.aerpula.app/og-image.png",
+      url: "/og-image.png",
       width: 1200,
       height: 630,
       alt: "Charan Aerpula (A Charan Teja Yadav) — Android, Linux & Web Developer Portfolio"
     }],
     locale: "en_US",
-    siteName: "Charan Aerpula Portfolio"
+    siteName: "Charan Aerpula (A Charan Teja Yadav) Portfolio"
   },
   twitter: {
     card: "summary_large_image",
     title: "Charan Aerpula (A Charan Teja Yadav) — Android, Linux & Web Developer",
     description: "Charan Aerpula (A Charan Teja Yadav) from Hyderabad is an Android, Linux, and Web Developer building native apps, scalable backends, and data-driven web tools.",
-    images: ["https://charantejayadav.aerpula.app/og-image.png"]
+    creator: "@charanvikramadhitya",
+    images: ["/og-image.png"]
   }
 };
 
