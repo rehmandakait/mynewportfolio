@@ -1,0 +1,6 @@
+{
+  "name": "Aerpula Portfolio",
+  "description": "A clone of the portfolio website aerpula.app for Charan Vikramaditya.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
